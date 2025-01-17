@@ -43,6 +43,8 @@ wss.on('connection', (ws, req) => {
     console.log('New WebSocket client connected from:', req.socket.remoteAddress);
     websocketClients.push(ws);
 
+    ws.send('INNOVATORS SOFT;Start Your New Session With Our School Management Software, 
+	    Plese Whatsapp @  92 322 4559543;https://i.ibb.co/whb6xCj/School-Add.jpghttps')
     // Handle incoming messages from client
     ws.on('message', (message) => {
         console.log('Received message from client:', message.toString());
